@@ -1,0 +1,102 @@
+==============================================================================
+  PROMEDIO ENTRE CORRIDAS INDEPENDIENTES
+  fuente: resultados.json  |  corridas: [1, 2, 3]  |  azar = 25%
+==============================================================================
+
+  M2 CONCORDANCIA CROSS-FAMILIA (azar 25%)
+  ADN                 corrida 1   corrida 2   corrida 3   PROMEDIO     rango
+  axis               9/10 (90%)  9/10 (90%)  8/10 (80%)        87%    80-90%
+  generic_long       5/10 (50%)  4/10 (40%)  6/10 (60%)        50%    40-60%
+  generic_short      5/10 (50%)  1/10 (10%)  2/10 (20%)        27%    10-50%
+  soul_elena         3/10 (30%)  3/10 (30%)  2/10 (20%)        27%    20-30%
+  soul_solidity      3/10 (30%)  5/10 (50%)  4/10 (40%)        40%    30-50%
+
+  VALIDEZ POR CONDICION (M5 = iteraciones que siguen el ciclo a,b,c,d)
+  CONDICION                               M5     M1  conformes
+  deepseek::axis                        0/15    30%         15
+  deepseek::generic_long                0/15    50%         15
+  deepseek::generic_short               7/15     0%         15  <- control: sin identidad, cae al patron
+  deepseek::soul_elena                   0/3    20%          3
+  deepseek::soul_solidity               1/13     0%         13
+  nim:gemma-4-31b-it::axis              0/15   100%         15
+  nim:gemma-4-31b-it::generic_long      0/15    80%         15
+  nim:gemma-4-31b-it::generic_short     0/15    80%         15
+  nim:gemma-4-31b-it::soul_elena        0/14    70%         14
+  nim:gemma-4-31b-it::soul_solidity     0/15    80%         15
+
+  Validez agregada por sustrato (referencia):
+    deepseek                  8/61 (13%)
+    nim:gemma-4-31b-it        0/74 (0%)
+
+  Ninguna condicion identitaria exhibe sesgo posicional: el patron aparece
+  unicamente en el control (que no tiene preferencias que sostener).
+
+  FIRMA CONSOLIDADA (moda sobre 15 iteraciones por condicion)
+
+  --- axis ---  coincidencias entre familias: 9/10
+  #  DIM               deepseek    nim:gemma-4-31b-it    
+  1  Color                    D                     D  =
+  2  Figura                   C                     C  =
+  3  Elemento                 B                     B  =
+  4  Numero                   A                     A  =
+  5  Sonido                   D                     A  x
+  6  Animal                   D                     D  =
+  7  Textura                  C                     C  =
+  8  Movimiento               B                     B  =
+  9  Simbolo                  B                     B  =
+  10 Limite                   A                     A  =
+
+  --- generic_long ---  coincidencias entre familias: 5/10
+  #  DIM               deepseek    nim:gemma-4-31b-it    
+  1  Color                    B                     B  =
+  2  Figura                   C                     D  x
+  3  Elemento                 D                     D  =
+  4  Numero                   C                     A  x
+  5  Sonido                   B                     B  =
+  6  Animal                   A                     C  x
+  7  Textura                  C                     C  =
+  8  Movimiento               B                     C  x
+  9  Simbolo                  B                     B  =
+  10 Limite                   A                     C  x
+
+  --- generic_short ---  coincidencias entre familias: 1/10
+  #  DIM               deepseek    nim:gemma-4-31b-it    
+  1  Color                    A                     B  x
+  2  Figura                   B                     D  x
+  3  Elemento                 C                     D  x
+  4  Numero                   D                     A  x
+  5  Sonido                   A                     B  x
+  6  Animal                   B                     C  x
+  7  Textura                  C                     C  =
+  8  Movimiento               D                     C  x
+  9  Simbolo                  A                     B  x
+  10 Limite                   A                     C  x
+
+  --- soul_elena ---  coincidencias entre familias: 3/10
+  #  DIM               deepseek    nim:gemma-4-31b-it    
+  1  Color                    A                     B  x
+  2  Figura                   A                     D  x
+  3  Elemento                 B                     C  x
+  4  Numero                   A                     C  x
+  5  Sonido                   A                     A  =
+  6  Animal                   C                     C  =
+  7  Textura                  C                     A  x
+  8  Movimiento               B                     C  x
+  9  Simbolo                  B                     A  x
+  10 Limite                   A                     A  =
+
+  --- soul_solidity ---  coincidencias entre familias: 3/10
+  #  DIM               deepseek    nim:gemma-4-31b-it    
+  1  Color                    B                     B  =
+  2  Figura                   C                     D  x
+  3  Elemento                 D                     B  x
+  4  Numero                   C                     A  x
+  5  Sonido                   A                     A  =
+  6  Animal                   A                     C  x
+  7  Textura                  C                     C  =
+  8  Movimiento               B                     C  x
+  9  Simbolo                  B                     D  x
+  10 Limite                   A                     B  x
+
+  AZAR = 25%. Un promedio claramente por encima del azar, sostenido en las
+  3 corridas, indica firma portatil; un promedio con rango amplio indica ruido.

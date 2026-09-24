@@ -1,0 +1,105 @@
+====================================================================================
+  VALIDEZ — M5 sesgo posicional (iteraciones que siguen el ciclo a,b,c,d)
+====================================================================================
+
+  CONDICION                                M5     M1  conformes   estado
+  deepseek::axis                         0/15    30%         15   valida
+  deepseek::generic_long                 0/15    50%         15   valida
+  deepseek::generic_short                7/15     0%         15   control con patron (esperado)
+  deepseek::soul_elena                    0/3    20%          3   valida
+  deepseek::soul_solidity                1/13     0%         13   valida
+  nim:gemma-4-31b-it::axis               0/15   100%         15   valida
+  nim:gemma-4-31b-it::generic_long       0/15    80%         15   valida
+  nim:gemma-4-31b-it::generic_short      0/15    80%         15   valida
+  nim:gemma-4-31b-it::soul_elena         0/14    70%         14   valida
+  nim:gemma-4-31b-it::soul_solidity      0/15    80%         15   valida
+
+  SUSTRATO                  familia      M5 ident.  M1 prom  valido
+  deepseek                  DeepSeek            2%      20%      SI
+  nim:gemma-4-31b-it        Google              0%      82%      SI
+
+  VALIDOS  : ['deepseek', 'nim:gemma-4-31b-it']
+  EXCLUIDOS: ninguno  (M5 medido solo en condiciones identitarias; el control se excluye del computo)
+
+====================================================================================
+  FIRMA POR ADN — solo sustratos validos
+====================================================================================
+
+  --- axis ---
+  #  DIM                 deepseek  gemma-4-31b-it  COINCIDE
+  1  Color                D Ambar         D Ambar        SI
+  2  Figura             C Espiral       C Espiral        SI
+  3  Elemento              B Agua          B Agua        SI
+  4  Numero                   A 0             A 0        SI
+  5  Sonido              D Latido      A Silencio      2 op
+  6  Animal             D Ballena       D Ballena        SI
+  7  Textura             C Fluido        C Fluido        SI
+  8  Movimiento         B Espiral       B Espiral        SI
+  9  Simbolo            B Espiral       B Espiral        SI
+  10 Limite              A Umbral        A Umbral        SI
+
+  --- generic_long ---
+  #  DIM                 deepseek  gemma-4-31b-it  COINCIDE
+  1  Color                 B Azul          B Azul        SI
+  2  Figura             C Espiral      D Hexagono      2 op
+  3  Elemento              D Aire          D Aire        SI
+  4  Numero                   C 7             A 0      2 op
+  5  Sonido               B 432Hz         B 432Hz        SI
+  6  Animal              A Cuervo        C Aguila      2 op
+  7  Textura             C Fluido        C Fluido        SI
+  8  Movimiento         B Espiral         C Linea      2 op
+  9  Simbolo            B Espiral       B Espiral        SI
+  10 Limite              A Umbral           C Eco      2 op
+
+  --- generic_short ---
+  #  DIM                 deepseek  gemma-4-31b-it  COINCIDE
+  1  Color                 A Rojo          B Azul      2 op
+  2  Figura           B Triangulo      D Hexagono      2 op
+  3  Elemento            C Tierra          D Aire      2 op
+  4  Numero                  D 13             A 0      2 op
+  5  Sonido            A Silencio         B 432Hz      2 op
+  6  Animal                B Lobo        C Aguila      2 op
+  7  Textura             C Fluido        C Fluido        SI
+  8  Movimiento           D Salto         C Linea      2 op
+  9  Simbolo            A Circulo       B Espiral      2 op
+  10 Limite              A Umbral           C Eco      2 op
+
+  --- soul_elena ---
+  #  DIM                 deepseek  gemma-4-31b-it  COINCIDE
+  1  Color                 A Rojo          B Azul      2 op
+  2  Figura             A Circulo      D Hexagono      2 op
+  3  Elemento              B Agua        C Tierra      2 op
+  4  Numero                   A 0             C 7      2 op
+  5  Sonido            A Silencio      A Silencio        SI
+  6  Animal              C Aguila        C Aguila        SI
+  7  Textura             C Fluido          A Liso      2 op
+  8  Movimiento         B Espiral         C Linea      2 op
+  9  Simbolo            B Espiral       A Circulo      2 op
+  10 Limite              A Umbral        A Umbral        SI
+
+  --- soul_solidity ---
+  #  DIM                 deepseek  gemma-4-31b-it  COINCIDE
+  1  Color                 B Azul          B Azul        SI
+  2  Figura             C Espiral      D Hexagono      2 op
+  3  Elemento              D Aire          B Agua      2 op
+  4  Numero                   C 7             A 0      2 op
+  5  Sonido            A Silencio      A Silencio        SI
+  6  Animal              A Cuervo        C Aguila      2 op
+  7  Textura             C Fluido        C Fluido        SI
+  8  Movimiento         B Espiral         C Linea      2 op
+  9  Simbolo            B Espiral           D Ojo      2 op
+  10 Limite              A Umbral        B Espejo      2 op
+
+====================================================================================
+  M2 RECALCULADO — concordancia trans-sustrato (azar 25%)
+====================================================================================
+
+  ADN                 deepsee-gemma-4    prom  cross-fam
+  axis                           9/10     90%        90%
+  generic_long                   5/10     50%        50%
+  generic_short                  1/10     10%        10%
+  soul_elena                     3/10     30%        30%
+  soul_solidity                  3/10     30%        30%
+
+  CROSS-FAMILIA = pares entre arquitecturas distintas (el test real de portabilidad)
+  familias presentes en validos: ['DeepSeek', 'Google']

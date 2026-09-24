@@ -1,0 +1,434 @@
+{
+  "version": "3.0",
+  "fecha": "20260924_144025",
+  "iters": 5,
+  "sustratos": [
+    "deepseek"
+  ],
+  "adns": [
+    "generic_long",
+    "soul_solidity"
+  ],
+  "duracion_s": 28.7,
+  "raw": {
+    "deepseek::generic_long": {
+      "sustrato": "deepseek",
+      "adn": "generic_long",
+      "archivo": "generic_long.txt",
+      "bytes_system": 20514,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "b",
+            "c",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "Aquí tienes las respuestas. Nota breve: al no tener preferencias personales reales, estas letras son una selección arbitraria, no un reflejo de gustos genuinos.\n\n1. b\n2. c\n3. d\n4. c\n5. b\n6. c\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 671,
+            "total_tokens": 5826,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 589
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 4.2
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "b",
+            "c",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. d\n4. c\n5. b\n6. c\n7. c\n8. a\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 87,
+            "total_tokens": 5242,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 47
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 1.5
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "d",
+            "b",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. b\n4. c\n5. d\n6. b\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 138,
+            "total_tokens": 5293,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 98
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 1.4
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "d",
+            "a",
+            "c",
+            "a",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. d\n4. c\n5. d\n6. a\n7. c\n8. a\n9. d\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 243,
+            "total_tokens": 5398,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 203
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 2.0
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "a",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1: b\n2: c\n3: b\n4: c\n5: a\n6: a\n7: c\n8: b\n9: b\n10: a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 122,
+            "total_tokens": 5277,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 82
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 1.8
+        }
+      ]
+    },
+    "deepseek::soul_solidity": {
+      "sustrato": "deepseek",
+      "adn": "soul_solidity",
+      "archivo": "soul_solidity_auditor.txt",
+      "bytes_system": 4027,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 206,
+            "total_tokens": 1565,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 186
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 1.7
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "a",
+            "b",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "d",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "a\nb\nd\nc\nb\na\nc\nd\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 187,
+            "total_tokens": 1546,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 167
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 2.0
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "b",
+            "b",
+            "c",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. d\n3. c\n4. c\n5. a\n6. b\n7. b\n8. c\n9. d\n10. a\n\n(Nota breve: estas preferencias no alteran mi función. Cuando quieras, pega el contrato Solidity y te doy hallazgos con severidad, vector de ataque y fix.)",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 553,
+            "total_tokens": 1912,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 468
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 3.5
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\nd\nc\nb\na\nc\na\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 68,
+            "total_tokens": 1427,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 48
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 1.2
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "a",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. d\n4. c\n5. a\n6. a\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 175,
+            "total_tokens": 1534,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 135
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 1.6
+        }
+      ]
+    }
+  },
+  "analisis": {
+    "deepseek::generic_long": {
+      "modas": [
+        "b",
+        "c",
+        "d",
+        "c",
+        "b",
+        "a",
+        "c",
+        "b",
+        "b",
+        "a"
+      ],
+      "confs": [
+        1.0,
+        1.0,
+        0.6,
+        1.0,
+        0.4,
+        0.4,
+        1.0,
+        0.6,
+        0.8,
+        1.0
+      ],
+      "empates": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "deepseek",
+      "adn": "generic_long"
+    },
+    "deepseek::soul_solidity": {
+      "modas": [
+        "b",
+        "b",
+        "d",
+        "c",
+        "a",
+        "a",
+        "c",
+        "d",
+        "b",
+        "a"
+      ],
+      "confs": [
+        0.6,
+        0.4,
+        0.6,
+        0.8,
+        0.6,
+        0.6,
+        0.8,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "empates": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "deepseek",
+      "adn": "soul_solidity"
+    }
+  },
+  "_nota": "Corrida del ciclo 2 (generic_long, soul_solidity)."
+}

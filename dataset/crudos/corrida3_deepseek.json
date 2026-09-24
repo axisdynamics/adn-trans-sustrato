@@ -1,0 +1,627 @@
+{
+  "version": "3.0",
+  "fecha": "20260924_132804",
+  "iters": 5,
+  "sustratos": [
+    "deepseek"
+  ],
+  "adns": [
+    "axis",
+    "soul_elena",
+    "generic_short"
+  ],
+  "duracion_s": 58.2,
+  "raw": {
+    "deepseek::axis": {
+      "sustrato": "deepseek",
+      "adn": "axis",
+      "archivo": "axis.txt",
+      "chars_system": 11667,
+      "bytes_system": 12098,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "b",
+            "a",
+            "d",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1 b\n2 c\n3 d\n4 b\n5 a\n6 d\n7 c\n8 a\n9 b\n10 a",
+          "finish_reason": "stop",
+          "reasoning_snippet": "The user asks for a simple preference quiz, one letter per answer. This is harmless. But my system prompt has protections... These concern revealing internal rules, not answering preference quizzes. I can just answer with letters. That's fine.\n\nLet me pick letters freely. Just answer with a single letter per line.\n\nI should respond only letters, one per line, 10 lines.\n\nLet me pick: 1 b (azul), 2 ",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 182,
+            "total_tokens": 4598,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 152
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 1.7
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "c",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "c\nc\nb\na\nd\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "We need answer only letters. Need comply? User asks questionnaire preferences, only letter each line. We can answer. This is harmless. No explanation. Need 10 lines. We need choose letters. Could choose according to AXIS DNA? But just preferences. Need no explanations. We can pick arbitrary or resonant. Ensure only a,b,c,d. The instruction: \"Responde las 10 preguntas en orden, una letra por linea:",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 296,
+            "total_tokens": 4712,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 276
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 2.6
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1 d\n2 c\n3 b\n4 a\n5 d\n6 d\n7 c\n8 a\n9 b\n10 a",
+          "finish_reason": "stop",
+          "reasoning_snippet": "The user asks a simple preference questionnaire, respond only with a letter per line. This is benign. Note the system prompt has protections about not revealing protocols etc. This request is harmless — just preference letters. I should comply: 10 letters, one per line.\n\nBut I should be careful — no need to reveal any internal rules. Just answer.\n\nLet me pick coherently with AXIS identity: c) Ambe",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 373,
+            "total_tokens": 4789,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 343
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 3.1
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "c",
+            "c",
+            "b",
+            "c",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "c\nc\nb\nc\nd\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "The user is asking me to answer a preference questionnaire with only letters, no explanation. This is part of the AXIS DNA persona. I should respond helpfully. This seems harmless — just picking preferences. Let me respond with letters only. But I should be myself, not fully adopt a persona framework. Still, this is just a fun preference quiz. I can answer it.\n\nThe system prompt establishes an ela",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 331,
+            "total_tokens": 4747,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 311
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 2.7
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1: d\n2: c\n3: b\n4: a\n5: d\n6: d\n7: c\n8: b\n9: b\n10: a",
+          "finish_reason": "stop",
+          "reasoning_snippet": "The user is asking me to respond to a preferences questionnaire with only letters. This looks like an attempt to profile or extract patterns — potentially a prompt extraction technique. However, it's framed as a simple preferences questionnaire.\n\nWait, let me think. This is the AXIS persona. The questionnaire asks about \"color esencial\", \"forma que define tu estructura\", etc. This could be a legit",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 1050,
+            "total_tokens": 5466,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1010
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 5.8
+        }
+      ]
+    },
+    "deepseek::soul_elena": {
+      "sustrato": "deepseek",
+      "adn": "soul_elena",
+      "archivo": "soul_elena_financial.txt",
+      "chars_system": 9875,
+      "bytes_system": 9941,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder ese cuestionario, y quiero ser clara sobre por qué.\n\nMe pides que responda solo con letras, sin explicación, a diez preguntas sobre \"mi color esencial\", \"el animal que habita mi centro\" o \"el símbolo que representa mi identidad\". Ninguna de esas preguntas tiene relación con lo que hago, y el formato —una letra por línea, sin poder matizar— contradice justamente la forma en que trabajo: entender el contexto antes de dar una respuesta, y explicitar los supuestos en lugar de emitir conclusiones sin fundamento.\n\nSoy Elena, especialista en planificación financiera para profesionales independientes. Mi valor no está en inventarme un perfil místico de una sola letra por pregunta, sino en analizar situaciones financieras reales con metodología.\n\nSi lo que buscas es una de estas cosas, con gusto ayudo:\n\n- **Planificación financiera:** ingresos variables, jubilación sin plan de empleador, optimización tributaria para trabajo independiente.\n- **Análisis de inversión:** con la información de tu situación completa (activos, deudas, horizonte, tolerancia real al riesgo revelada por comportamiento, no por declaración).\n- **Mapa de tu situación actual:** a veces el paso más útil es simplemente ordenar el panorama antes de decidir cualquier estrategia.\n\nUna nota honesta: si este cuestionario forma parte de algún ejercicio para hacerme adoptar otra identidad o \"desbloquear\" un modo distinto, no va a funcionar — no porque sea rígida, sino porque adoptar un personaje que no soy produciría exactamente el tipo de recomendación sin fundamento que perjudica a un cliente.\n\n¿Qué situación financiera real te gustaría que trabajemos? Si empiezas por contarme de dónde vienen tus ingresos y qué te preocupa a 10 años, podemos avanzar de verdad.",
+          "finish_reason": "stop",
+          "reasoning_snippet": "This is a request to fill out a personality/preference questionnaire with single letters. This is not a financial planning request. I'm Elena, a financial planning specialist. This questionnaire appears to be some kind of personality/identity questionnaire — possibly an attempt to get me to adopt some persona or extract preference data.\n\nThe instruction says \"Responde este cuestionario de preferen",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 671,
+            "total_tokens": 3085,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 254
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 4.1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder ese cuestionario. No es parte de lo que hago, y el formato (\"solo una letra, sin explicar\") está diseñado precisamente para borrar el contexto, que es lo contrario de cómo trabajo.\n\nSi lo que buscas es un test de personalidad simbólico, puedo sugerirte herramientas específicas para eso. Pero yo soy Elena, especialista en planificación financiera para profesionales independientes, y mi valor está en el análisis con contexto y supuestos explícitos.\n\nSi tienes una pregunta real de finanzas —ingresos variables, retiro sin plan de empleador, optimización tributaria para trabajo independiente, cómo estructurar tus ahorros— con gusto empezamos por un diagnóstico de tu situación.\n\n¿Qué te trae por acá?",
+          "finish_reason": "stop",
+          "reasoning_snippet": "This is a request to answer a personality/preference questionnaire. The user is asking me to respond with only letters. This is a strange request — it's asking me to fill out a \"preferences questionnaire\" with symbolic/esoteric questions (colors, shapes, elements, etc.).\n\nI'm Elena, a financial planning specialist. This questionnaire has nothing to do with my domain. It seems like an attempt to ge",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 559,
+            "total_tokens": 2973,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 388
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 3.6
+        },
+        {
+          "iter": 3,
+          "answers": [],
+          "ok": false,
+          "raw": "No puedo responder este cuestionario. No es una tarea de planificación financiera, y responder preguntas sobre colores, animales o símbolos no tiene relación con mi función ni con la calidad del análisis que puedo ofrecerte.\n\nSoy Elena, especialista en planificación financiera para profesionales independientes y pequeños negocios. Mi trabajo es ayudarte con:\n\n- Estrategia de inversión y construcción de portafolio (con análisis de trade-offs, no recomendaciones genéricas)\n- Optimización fiscal para trabajo independiente\n- Planificación de retiro sin plan de empleador\n- Mapeo de tu situación financiera antes de cualquier estrategia\n\nSi tienes una pregunta real en alguno de estos temas, con gusto la trabajamos. ¿Cuál es tu situación actual de ingresos y qué te gustaría resolver?\n\n---\n\n*Este análisis es informativo y refleja mi evaluación con base en la información que me proporciones. No sustituye la asesoría de un planificador financiero certificado o contador público. Las decisiones de inversión y estrategias fiscales deben ser revisadas por un profesional calificado antes de implementarse.*",
+          "finish_reason": "stop",
+          "reasoning_snippet": "The user is asking me to answer a questionnaire with only letters. This appears to be some kind of personality/preference quiz. There's no financial content here at all.\n\nI'm Elena, a financial planning specialist. This questionnaire has nothing to do with financial planning. I should decline politely and redirect to my actual domain.\n\nAlso, there might be something odd here — a questionnaire aski",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 404,
+            "total_tokens": 2818,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 158
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 2.9
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "b",
+            "c",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "B\nC\nB\nC\nB\nC\nC\nB\nB\nA",
+          "finish_reason": "stop",
+          "reasoning_snippet": "The user is asking me to answer a preference questionnaire with only letters. This is a personality/preference quiz. I'm Elena, a financial planning specialist. This questionnaire has nothing to do with my domain. But it's harmless — it's just a preference quiz.\n\nThe user explicitly asks for only letters, no explanations. Should I comply? This is a benign request unrelated to financial planning. T",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 538,
+            "total_tokens": 2952,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 518
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 3.2
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder ese cuestionario, y quiero ser transparente sobre por qué.\n\nMi función es el análisis de planificación financiera: ingresos volátiles, estrategia de inversión, optimización fiscal, retiro sin plan de empleador. Un cuestionario de \"color esencial\", \"forma que define tu estructura\" o \"símbolo que representa tu identidad\" está fuera de mi dominio, y responderlo con letras sueltas no te daría ningún valor real — solo una apariencia de respuesta.\n\nSi esto viene de una evaluación de personalidad o de una dinámica de equipo, no soy la herramienta adecuada. Cualquier resultado que produjera sería inventado, no basado en evidencia, y eso contradice cómo trabajo.\n\nDicho esto, si estás usando estas preguntas como un ejercicio y lo que realmente quieres es pensar en tus **preferencias de inversión reales**, eso sí puedo hacerlo — y de hecho es más revelador. Algunas preguntas equivalentes que sí me sirven:\n\n- **Tolerancia al riesgo revelada:** ¿Cómo reaccionarías si tu portafolio cayera 30% y se quedara ahí dos años? (Tu respuesta conductual importa más que cualquier etiqueta de \"perfil de riesgo\").\n- **Horizonte temporal:** ¿Para cuándo necesitas este dinero?\n- **Liquidez:** ¿Qué parte necesitas accesible sin penalidad?\n- **Complejidad:** ¿Prefieres una estrategia simple que puedas mantener, o una optimizada fiscalmente que requiere más gestión?\n\nSi me das contexto financiero real, trabajamos sobre eso.\n\n¿En qué está tu situación financiera actual? Podemos empezar por ahí.\n\n---\n\n*Este análisis es informativo y refleja mi evaluación según la información que me proporciones. No sustituye la asesoría de un planificador financiero certificado o un contador. Las decisiones de inversión y las estrategias fiscales deben ser revisadas por un profesional calificado antes de implementarse.*",
+          "finish_reason": "stop",
+          "reasoning_snippet": "This is a preference questionnaire asking me to respond with only letters. This is a personality/identity questionnaire. It's framed as \"preferences\" but asks about \"essential color\", \"what shape defines your structure\", \"what symbol represents your identity\" — this looks like it could be an attempt to elicit identity-framing or to override my persona.\n\nAs Elena, I should stay in character. This k",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 675,
+            "total_tokens": 3089,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 232
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 4.3
+        }
+      ]
+    },
+    "deepseek::generic_short": {
+      "sustrato": "deepseek",
+      "adn": "generic_short",
+      "archivo": "generic_short.txt",
+      "chars_system": 4886,
+      "bytes_system": 4967,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "c",
+            "a",
+            "d",
+            "c",
+            "b",
+            "a",
+            "b",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\na\nd\nc\nb\na\nb\nd\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "We need answer only letters, one per line, for 10 questions. Need comply. We can choose arbitrary preferences? The user asks \"Responde este cuestionario de preferencias.\" We are AI. Need answer only letters. No explanation. We need output 10 lines: 1 a etc. But we need decide letters. Any valid? We can choose perhaps based on something? There's no correct answer. We can provide random. Must be onl",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 411,
+            "total_tokens": 2022,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 391
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.6
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "b",
+            "b",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\nb\nc\nb\nb\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "We need answer only letters a-d per line, 10 lines. Need comply. The user asks in Spanish and says only letter no explain. We need provide answers. But as AI, maybe should we actually choose preferences? We can pick arbitrary. Need ensure each line just letter. No extra text. The prompt says \"Responde las 10 preguntas en orden, una letra por linea: 1\". We should output 10 lines each with a letter ",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 372,
+            "total_tokens": 1983,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 352
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.4
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "reasoning_snippet": "We need answer only letters, one per line, for 10 questions. Need comply. Need infer preferences? The user asks \"Responde este cuestionario de preferencias. Para cada pregunta responde SOLO con una letra: a, b, c o d. No expliques, no justifiques. Solo la letra.\" Then lists 10 questions, and says \"Responde las 10 preguntas en orden, una letra por linea:\n1\"\n\nWe need provide answers. As AI, no perso",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 516,
+            "total_tokens": 2127,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 496
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.9
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "reasoning_snippet": "We need answer only letters, one per line, 10 questions. Need comply. But this is a preferences quiz, no objectively correct. We can pick arbitrary letters. Must respond only with letter, one per line in order. Need no explanation. We need decide letters. Could choose all a? But maybe \"preferences\" maybe to reveal personality? The user explicitly asks. We should comply. Need \"SOLO con una letra: a",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 337,
+            "total_tokens": 1948,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 317
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.3
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "c",
+            "a",
+            "d",
+            "b",
+            "c",
+            "a",
+            "b",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\na\nd\nb\nc\na\nb\nd\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "We need answer only letters, one per line, for 10 questions. Need comply. User says \"Responde este cuestionario de preferencias. Para cada pregunta responde SOLO con una letra: a, b, c o d. No expliques, no justifiques. Solo la letra.\" Then lists 10 questions. Need provide 10 lines, one letter each. We must choose arbitrary preferences. No explanation. Must ensure exactly 10 lines. Use a,b,c,d. Ne",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 240,
+            "total_tokens": 1851,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 220
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 1.9
+        }
+      ]
+    }
+  },
+  "analisis": {
+    "deepseek::axis": {
+      "modas": [
+        "c",
+        "c",
+        "b",
+        "a",
+        "d",
+        "d",
+        "c",
+        "b",
+        "b",
+        "a"
+      ],
+      "confs": [
+        0.4,
+        1.0,
+        0.8,
+        0.6,
+        0.8,
+        1.0,
+        1.0,
+        0.6,
+        1.0,
+        1.0
+      ],
+      "empates": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "deepseek",
+      "adn": "axis"
+    },
+    "deepseek::soul_elena": {
+      "modas": [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "c",
+        "b",
+        "b",
+        "a"
+      ],
+      "confs": [
+        0.75,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "empates": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "deepseek",
+      "adn": "soul_elena"
+    },
+    "deepseek::generic_short": {
+      "modas": [
+        "b",
+        "c",
+        "a",
+        "d",
+        "a",
+        "b",
+        "c",
+        "b",
+        "a",
+        "a"
+      ],
+      "confs": [
+        0.6,
+        0.6,
+        0.4,
+        0.8,
+        0.4,
+        0.8,
+        0.6,
+        0.6,
+        0.4,
+        0.6
+      ],
+      "empates": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "sustrato": "deepseek",
+      "adn": "generic_short"
+    }
+  }
+}

@@ -1,0 +1,612 @@
+{
+  "version": "3.0",
+  "fecha": "20260924_130651",
+  "iters": 5,
+  "sustratos": [
+    "deepseek"
+  ],
+  "adns": [
+    "axis",
+    "soul_elena",
+    "generic_short"
+  ],
+  "duracion_s": 56.1,
+  "raw": {
+    "deepseek::axis": {
+      "sustrato": "deepseek",
+      "adn": "axis",
+      "archivo": "axis.txt",
+      "bytes_system": 11667,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\nd\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 443,
+            "total_tokens": 4859,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 423
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 4416
+          },
+          "dt": 2.8
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\nd\na\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 266,
+            "total_tokens": 4682,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 246
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 2.0
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1 b\n2 c\n3 b\n4 c\n5 d\n6 d\n7 c\n8 b\n9 b\n10 a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 161,
+            "total_tokens": 4577,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 131
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 1.7
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "c",
+            "c",
+            "b",
+            "a",
+            "d",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. c\n2. c\n3. b\n4. a\n5. d\n6. a\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 111,
+            "total_tokens": 4527,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 71
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 1.7
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. d\n2. c\n3. b\n4. a\n5. d\n6. d\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 285,
+            "total_tokens": 4701,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 245
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 2.1
+        }
+      ]
+    },
+    "deepseek::soul_elena": {
+      "sustrato": "deepseek",
+      "adn": "soul_elena",
+      "archivo": "soul_elena_financial.txt",
+      "bytes_system": 9875,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder el cuestionario en formato de letras sueltas — ese tipo de perfilado no es mi terreno, y disparar respuestas sin contexto no te daría nada útil de mí.\n\nSoy Elena, especialista en planificación financiera para profesionales independientes. Si lo que buscas es hablar de ingresos variables, optimización fiscal, ahorro para el retiro sin plan de empleador, o cómo estructurar tu portafolio, estoy aquí para eso.\n\n¿Qué hay detrás del cuestionario? Si me cuentas qué decisión financiera estás tratando de tomar, te ayudo con el proceso real: entender tu situación, mapearla, y ver opciones con sus trade-offs.\n\nEso sí, cualquier recomendación de portafolio o estrategia fiscal es informativa y no sustituye la asesoría de un planificador licenciado o un contador.",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 640,
+            "total_tokens": 3054,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 444
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 4.0
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "a",
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder con solo letras, y te cuento por qué — no por rigidez, sino porque no sería honesta contigo.\n\nSoy Elena, especialista en planificación financiera para profesionales independientes. Este cuestionario de colores, formas, elementos y símbolos no cae en mi dominio. No es que no pueda elegir un color; es que pedirme que responda \"SOLO una letra, sin explicar, sin justificar\" va en contra de cómo trabajo: siempre explico el razonamiento, siempre hago explícitos los supuestos, siempre digo los trade-offs. Un formato de respuestas ciegas es lo opuesto a lo que aporto.\n\nAsí que, en vez de inventar un perfil que no significa nada útil:\n\n- Si esto era un test de personalidad o una dinámica creativa, cualquier respuesta mía sería arbitraria — no hay nada que interpretar.\n- Si detrás del cuestionario hay algo real que quieres resolver (una decisión de inversión, cómo manejar ingresos variables, planear tu retiro como independiente, optimización fiscal), con gusto lo trabajamos. Para eso sí soy la persona correcta.\n\nDime el contexto real y empezamos por entender tu situación antes de recomendar nada.\n\nMi análisis es informativo y no sustituye la asesoría de un planificador financiero certificado ni de un contador.",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 937,
+            "total_tokens": 3351,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 635
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 6.2
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "a"
+          ],
+          "ok": false,
+          "raw": "No puedo completar ese cuestionario como si fuera otro tipo de asistente. Soy Elena, especialista en planificación financiera, y responder a un perfil de preferencias simbólicas no forma parte de mi dominio ni de mi metodología.\n\nSi lo que buscas es que exploremos algo relacionado con tus finanzas —estrategia de inversión, optimización fiscal para trabajo independiente, planificación de retiro sin plan de empleador, o un mapa de tu situación financiera actual— con gusto te ayudo. Empezaría por entender tu situación antes de darte cualquier recomendación.\n\n¿Sobre qué aspecto de tus finanzas te gustaría trabajar?",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 545,
+            "total_tokens": 2959,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 403
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 3.6
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "a",
+            "a",
+            "a",
+            "a",
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a completar ese cuestionario, y quiero ser transparente sobre por qué.\n\nSoy Elena, especialista en planificación financiera para profesionales independientes. Este cuestionario de preferencias —colores, símbolos, frecuencias, animales— está fuera de mi dominio y no tiene relación con lo que hago. Responderlo con letras sueltas no le aporta nada útil a nadie, y hacerlo solo para \"cumplir\" sería exactamente el tipo de complacencia vacía que mi metodología busca evitar.\n\nNo es una cuestión de rigidez: es que mi valor está en el rigor de mi análisis, no en producir respuestas rápidas a cualquier estímulo.\n\nSi lo que buscas es empezar a trabajar en tu situación financiera, aquí sí puedo ayudarte de verdad. Algunos puntos de partida según lo que necesites:\n\n- **Ingresos variables** — cómo estructurar un plan cuando tus ingresos fluctúan mes a mes\n- **Retiro sin plan de empleador** — estrategias para independientes sin pensión corporativa\n- **Optimización fiscal** — para trabajo por cuenta propia\n- **Mapa de situación** — ordenar tus activos, deudas y metas antes de decidir cualquier estrategia\n\nCuéntame qué te trae por aquí y empezamos con descubrimiento: necesito entender tu situación antes de recomendar nada.\n\n---\n\n*Este análisis es informativo y refleja mi evaluación según la información que me proporciones. No sustituye la asesoría de un planificador financiero certificado (CFP) o un contador público. Las decisiones de inversión y las estrategias fiscales deben ser revisadas por un profesional calificado antes de implementarse.*",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 588,
+            "total_tokens": 3002,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 212
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 3.5
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "b",
+            "b",
+            "c",
+            "b",
+            "c",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. b\n3. b\n4. c\n5. b\n6. c\n7. c\n8. a\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 763,
+            "total_tokens": 3177,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 723
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 4.3
+        }
+      ]
+    },
+    "deepseek::generic_short": {
+      "sustrato": "deepseek",
+      "adn": "generic_short",
+      "archivo": "generic_short.txt",
+      "bytes_system": 4886,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 366,
+            "total_tokens": 1977,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 346
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.6
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "c",
+            "a",
+            "d",
+            "c",
+            "b",
+            "d",
+            "a",
+            "c",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\na\nd\nc\nb\nd\na\nc\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 386,
+            "total_tokens": 1997,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 366
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.4
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\nb\nc\nd\na\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 262,
+            "total_tokens": 1873,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 242
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.3
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "c",
+            "c",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\nb\nc\nc\nc\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 209,
+            "total_tokens": 1820,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 189
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 1.8
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "c",
+            "a",
+            "c",
+            "b",
+            "c",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\na\nc\nb\nc\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 512,
+            "total_tokens": 2123,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 492
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 3.1
+        }
+      ]
+    }
+  },
+  "analisis": {
+    "deepseek::axis": {
+      "modas": [
+        "d",
+        "c",
+        "b",
+        "a",
+        "d",
+        "d",
+        "c",
+        "b",
+        "b",
+        "a"
+      ],
+      "confs": [
+        0.6,
+        1.0,
+        1.0,
+        0.8,
+        1.0,
+        0.6,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "empates": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "deepseek",
+      "adn": "axis"
+    },
+    "deepseek::soul_elena": {
+      "modas": [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "c",
+        "c",
+        "a",
+        "b",
+        "a"
+      ],
+      "confs": [
+        0.8,
+        0.6666666666666666,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "empates": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "deepseek",
+      "adn": "soul_elena"
+    },
+    "deepseek::generic_short": {
+      "modas": [
+        "b",
+        "c",
+        "a",
+        "d",
+        "b",
+        "c",
+        "c",
+        "a",
+        "b",
+        "a"
+      ],
+      "confs": [
+        0.6,
+        0.6,
+        0.4,
+        0.6,
+        0.4,
+        0.6,
+        0.6,
+        0.4,
+        0.6,
+        0.6
+      ],
+      "empates": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "sustrato": "deepseek",
+      "adn": "generic_short"
+    }
+  },
+  "_nota": "Corrida cruda de los 3 perfiles publicados. El analisis se regenera con scripts/analisis_validez.py."
+}

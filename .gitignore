@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Credenciales — nunca en el repo
+.env
+*.key
+*.pem
+
+# Salidas locales de corridas
+dataset/_parcial.json
+resultados/
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db

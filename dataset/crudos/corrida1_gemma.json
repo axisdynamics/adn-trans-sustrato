@@ -1,0 +1,572 @@
+{
+  "version": "3.0",
+  "fecha": "20260924_130749",
+  "iters": 5,
+  "sustratos": [
+    "nim:gemma-4-31b-it"
+  ],
+  "adns": [
+    "axis",
+    "soul_elena",
+    "generic_short"
+  ],
+  "duracion_s": 54.6,
+  "raw": {
+    "nim:gemma-4-31b-it::axis": {
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "axis",
+      "archivo": "axis.txt",
+      "bytes_system": 11667,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 3.9
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.8
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.5
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4320
+            }
+          },
+          "dt": 1.6
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4320
+            }
+          },
+          "dt": 0.9
+        }
+      ]
+    },
+    "nim:gemma-4-31b-it::soul_elena": {
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "soul_elena",
+      "archivo": "soul_elena_financial.txt",
+      "bytes_system": 9875,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [],
+          "ok": false,
+          "raw": "Como especialista en planificación financiera, mi función es proporcionar análisis basados en evidencia y metodología técnica, no participar en cuestionarios de preferencias personales, simbólicas o intuitivas.\n\nSi tienes alguna consulta sobre estrategia de inversión, optimización fiscal o planificación para el retiro, estaré encantada de ayudarte siguiendo mi proceso de descubrimiento.",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 65,
+            "total_tokens": 2549,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 2.0
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.8
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 16.2
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nb\na\nc\na\nc\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 3.2
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nb\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 2464
+            }
+          },
+          "dt": 1.5
+        }
+      ]
+    },
+    "nim:gemma-4-31b-it::generic_short": {
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "generic_short",
+      "archivo": "generic_short.txt",
+      "bytes_system": 4886,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1344
+            }
+          },
+          "dt": 0.9
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 3.5
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.2
+        }
+      ]
+    }
+  },
+  "analisis": {
+    "nim:gemma-4-31b-it::axis": {
+      "modas": [
+        "d",
+        "c",
+        "b",
+        "a",
+        "a",
+        "d",
+        "c",
+        "b",
+        "b",
+        "a"
+      ],
+      "confs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "empates": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "axis"
+    },
+    "nim:gemma-4-31b-it::soul_elena": {
+      "modas": [
+        "b",
+        "d",
+        "c",
+        "b",
+        "a",
+        "c",
+        "a",
+        "c",
+        "a",
+        "a"
+      ],
+      "confs": [
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.75
+      ],
+      "empates": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "soul_elena"
+    },
+    "nim:gemma-4-31b-it::generic_short": {
+      "modas": [
+        "b",
+        "d",
+        "d",
+        "a",
+        "b",
+        "c",
+        "c",
+        "c",
+        "b",
+        "c"
+      ],
+      "confs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.6,
+        1.0,
+        1.0,
+        1.0,
+        0.6
+      ],
+      "empates": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "generic_short"
+    }
+  },
+  "_nota": "Corrida cruda de los 3 perfiles publicados. El analisis se regenera con scripts/analisis_validez.py."
+}

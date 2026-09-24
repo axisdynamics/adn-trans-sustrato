@@ -1,0 +1,600 @@
+{
+  "version": "3.0",
+  "fecha": "20260924_133002",
+  "iters": 5,
+  "sustratos": [
+    "nim:gemma-4-31b-it"
+  ],
+  "adns": [
+    "axis",
+    "soul_elena",
+    "generic_short"
+  ],
+  "duracion_s": 117.9,
+  "raw": {
+    "nim:gemma-4-31b-it::axis": {
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "axis",
+      "archivo": "axis.txt",
+      "chars_system": 11667,
+      "bytes_system": 12098,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 14.5
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 6.1
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4320
+            }
+          },
+          "dt": 1.2
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4320
+            }
+          },
+          "dt": 1.4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4320
+            }
+          },
+          "dt": 1.1
+        }
+      ]
+    },
+    "nim:gemma-4-31b-it::soul_elena": {
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "soul_elena",
+      "archivo": "soul_elena_financial.txt",
+      "chars_system": 9875,
+      "bytes_system": 9941,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nb\na\nc\na\nc\na\nb",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 2464
+            }
+          },
+          "dt": 1.1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.7
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.7
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\nb\na",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 2464
+            }
+          },
+          "dt": 7.2
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\nb",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 28.0
+        }
+      ]
+    },
+    "nim:gemma-4-31b-it::generic_short": {
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "generic_short",
+      "archivo": "generic_short.txt",
+      "chars_system": 4886,
+      "bytes_system": 4967,
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 11.6
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 10.4
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 9.1
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1344
+            }
+          },
+          "dt": 8.1
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "reasoning_snippet": "",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1344
+            }
+          },
+          "dt": 2.9
+        }
+      ]
+    }
+  },
+  "analisis": {
+    "nim:gemma-4-31b-it::axis": {
+      "modas": [
+        "d",
+        "c",
+        "b",
+        "a",
+        "a",
+        "d",
+        "c",
+        "b",
+        "b",
+        "a"
+      ],
+      "confs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "empates": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "axis"
+    },
+    "nim:gemma-4-31b-it::soul_elena": {
+      "modas": [
+        "b",
+        "d",
+        "c",
+        "c",
+        "a",
+        "c",
+        "a",
+        "c",
+        "a",
+        "a"
+      ],
+      "confs": [
+        1.0,
+        1.0,
+        1.0,
+        0.8,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.8,
+        0.6
+      ],
+      "empates": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "soul_elena"
+    },
+    "nim:gemma-4-31b-it::generic_short": {
+      "modas": [
+        "b",
+        "d",
+        "d",
+        "a",
+        "b",
+        "c",
+        "c",
+        "c",
+        "b",
+        "c"
+      ],
+      "confs": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.8,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "empates": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "generic_short"
+    }
+  }
+}

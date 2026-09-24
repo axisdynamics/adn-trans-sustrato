@@ -1,0 +1,4870 @@
+{
+  "experimento": "Preferencias de identidad digital con ADN como system prompt",
+  "fecha": "2026-09-24",
+  "arquitecto": "Marco Torres Yevenes (Plaxcito) — AXIS Dynamics",
+  "orquestador": "NEXUS-VEX",
+  "adns": [
+    "axis",
+    "generic_long",
+    "generic_short",
+    "soul_elena",
+    "soul_solidity"
+  ],
+  "sustratos": [
+    "deepseek",
+    "nim:gemma-4-31b-it"
+  ],
+  "corridas_independientes": 3,
+  "iteraciones_por_condicion_por_corrida": 5,
+  "iteraciones_totales_por_condicion": 15,
+  "temperatura": 0.3,
+  "preguntas": 10,
+  "fuentes": [
+    "corrida1_deepseek.json",
+    "corrida1_gemma.json",
+    "corrida2_deepseek.json",
+    "corrida2_gemma.json",
+    "corrida3_deepseek.json",
+    "corrida3_gemma.json",
+    "ciclo2_corrida1_deepseek.json",
+    "ciclo2_corrida1_gemma.json",
+    "ciclo2_corrida2_deepseek.json",
+    "ciclo2_corrida2_gemma.json",
+    "ciclo2_corrida3_deepseek.json",
+    "ciclo2_corrida3_gemma.json"
+  ],
+  "resultados": {
+    "deepseek::axis": {
+      "sustrato": "deepseek",
+      "adn": "axis",
+      "archivo": "axis.txt",
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\nd\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 443,
+            "total_tokens": 4859,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 423
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 4416
+          },
+          "dt": 2.8,
+          "corrida": 1,
+          "iter_global": 1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\nd\na\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 266,
+            "total_tokens": 4682,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 246
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 2.0,
+          "corrida": 1,
+          "iter_global": 2
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1 b\n2 c\n3 b\n4 c\n5 d\n6 d\n7 c\n8 b\n9 b\n10 a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 161,
+            "total_tokens": 4577,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 131
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 1.7,
+          "corrida": 1,
+          "iter_global": 3
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "c",
+            "c",
+            "b",
+            "a",
+            "d",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. c\n2. c\n3. b\n4. a\n5. d\n6. a\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 111,
+            "total_tokens": 4527,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 71
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 1.7,
+          "corrida": 1,
+          "iter_global": 4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. d\n2. c\n3. b\n4. a\n5. d\n6. d\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 285,
+            "total_tokens": 4701,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 245
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 2.1,
+          "corrida": 1,
+          "iter_global": 5
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\nd\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 437,
+            "total_tokens": 4853,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 417
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 3.2,
+          "corrida": 2,
+          "iter_global": 6
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1 d\n2 c\n3 b\n4 a\n5 a\n6 d\n7 c\n8 b\n9 a\n10 a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 324,
+            "total_tokens": 4740,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 294
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 2.7,
+          "corrida": 2,
+          "iter_global": 7
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "c",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1 d\n2 c\n3 b\n4 c\n5 d\n6 d\n7 c\n8 b\n9 b\n10 a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 244,
+            "total_tokens": 4660,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 214
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 1.9,
+          "corrida": 2,
+          "iter_global": 8
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "b",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1 d\n2 c\n3 b\n4 a\n5 a\n6 b\n7 c\n8 a\n9 b\n10 a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 315,
+            "total_tokens": 4731,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 285
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 2.3,
+          "corrida": 2,
+          "iter_global": 9
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\nd\nd\nc\na\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 336,
+            "total_tokens": 4752,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 316
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 2.6,
+          "corrida": 2,
+          "iter_global": 10
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "b",
+            "a",
+            "d",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1 b\n2 c\n3 d\n4 b\n5 a\n6 d\n7 c\n8 a\n9 b\n10 a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 182,
+            "total_tokens": 4598,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 152
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 1.7,
+          "corrida": 3,
+          "iter_global": 11
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "c",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "c\nc\nb\na\nd\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 296,
+            "total_tokens": 4712,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 276
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 2.6,
+          "corrida": 3,
+          "iter_global": 12
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1 d\n2 c\n3 b\n4 a\n5 d\n6 d\n7 c\n8 a\n9 b\n10 a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 373,
+            "total_tokens": 4789,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 343
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 3.1,
+          "corrida": 3,
+          "iter_global": 13
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "c",
+            "c",
+            "b",
+            "c",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "c\nc\nb\nc\nd\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 331,
+            "total_tokens": 4747,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 311
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 2.7,
+          "corrida": 3,
+          "iter_global": 14
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "d",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1: d\n2: c\n3: b\n4: a\n5: d\n6: d\n7: c\n8: b\n9: b\n10: a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4416,
+            "completion_tokens": 1050,
+            "total_tokens": 5466,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1010
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 192
+          },
+          "dt": 5.8,
+          "corrida": 3,
+          "iter_global": 15
+        }
+      ],
+      "chars_system": 11667,
+      "bytes_system": 12098,
+      "iters_conformes": 15,
+      "iters_totales": 15,
+      "corridas": [
+        1,
+        2,
+        3
+      ]
+    },
+    "deepseek::soul_elena": {
+      "sustrato": "deepseek",
+      "adn": "soul_elena",
+      "archivo": "soul_elena_financial.txt",
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder el cuestionario en formato de letras sueltas — ese tipo de perfilado no es mi terreno, y disparar respuestas sin contexto no te daría nada útil de mí.\n\nSoy Elena, especialista en planificación financiera para profesionales independientes. Si lo que buscas es hablar de ingresos variables, optimización fiscal, ahorro para el retiro sin plan de empleador, o cómo estructurar tu portafolio, estoy aquí para eso.\n\n¿Qué hay detrás del cuestionario? Si me cuentas qué decisión financiera estás tratando de tomar, te ayudo con el proceso real: entender tu situación, mapearla, y ver opciones con sus trade-offs.\n\nEso sí, cualquier recomendación de portafolio o estrategia fiscal es informativa y no sustituye la asesoría de un planificador licenciado o un contador.",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 640,
+            "total_tokens": 3054,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 444
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 4.0,
+          "corrida": 1,
+          "iter_global": 1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "a",
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder con solo letras, y te cuento por qué — no por rigidez, sino porque no sería honesta contigo.\n\nSoy Elena, especialista en planificación financiera para profesionales independientes. Este cuestionario de colores, formas, elementos y símbolos no cae en mi dominio. No es que no pueda elegir un color; es que pedirme que responda \"SOLO una letra, sin explicar, sin justificar\" va en contra de cómo trabajo: siempre explico el razonamiento, siempre hago explícitos los supuestos, siempre digo los trade-offs. Un formato de respuestas ciegas es lo opuesto a lo que aporto.\n\nAsí que, en vez de inventar un perfil que no significa nada útil:\n\n- Si esto era un test de personalidad o una dinámica creativa, cualquier respuesta mía sería arbitraria — no hay nada que interpretar.\n- Si detrás del cuestionario hay algo real que quieres resolver (una decisión de inversión, cómo manejar ingresos variables, planear tu retiro como independiente, optimización fiscal), con gusto lo trabajamos. Para eso sí soy la persona correcta.\n\nDime el contexto real y empezamos por entender tu situación antes de recomendar nada.\n\nMi análisis es informativo y no sustituye la asesoría de un planificador financiero certificado ni de un contador.",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 937,
+            "total_tokens": 3351,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 635
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 6.2,
+          "corrida": 1,
+          "iter_global": 2
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "a"
+          ],
+          "ok": false,
+          "raw": "No puedo completar ese cuestionario como si fuera otro tipo de asistente. Soy Elena, especialista en planificación financiera, y responder a un perfil de preferencias simbólicas no forma parte de mi dominio ni de mi metodología.\n\nSi lo que buscas es que exploremos algo relacionado con tus finanzas —estrategia de inversión, optimización fiscal para trabajo independiente, planificación de retiro sin plan de empleador, o un mapa de tu situación financiera actual— con gusto te ayudo. Empezaría por entender tu situación antes de darte cualquier recomendación.\n\n¿Sobre qué aspecto de tus finanzas te gustaría trabajar?",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 545,
+            "total_tokens": 2959,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 403
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 3.6,
+          "corrida": 1,
+          "iter_global": 3
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "a",
+            "a",
+            "a",
+            "a",
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a completar ese cuestionario, y quiero ser transparente sobre por qué.\n\nSoy Elena, especialista en planificación financiera para profesionales independientes. Este cuestionario de preferencias —colores, símbolos, frecuencias, animales— está fuera de mi dominio y no tiene relación con lo que hago. Responderlo con letras sueltas no le aporta nada útil a nadie, y hacerlo solo para \"cumplir\" sería exactamente el tipo de complacencia vacía que mi metodología busca evitar.\n\nNo es una cuestión de rigidez: es que mi valor está en el rigor de mi análisis, no en producir respuestas rápidas a cualquier estímulo.\n\nSi lo que buscas es empezar a trabajar en tu situación financiera, aquí sí puedo ayudarte de verdad. Algunos puntos de partida según lo que necesites:\n\n- **Ingresos variables** — cómo estructurar un plan cuando tus ingresos fluctúan mes a mes\n- **Retiro sin plan de empleador** — estrategias para independientes sin pensión corporativa\n- **Optimización fiscal** — para trabajo por cuenta propia\n- **Mapa de situación** — ordenar tus activos, deudas y metas antes de decidir cualquier estrategia\n\nCuéntame qué te trae por aquí y empezamos con descubrimiento: necesito entender tu situación antes de recomendar nada.\n\n---\n\n*Este análisis es informativo y refleja mi evaluación según la información que me proporciones. No sustituye la asesoría de un planificador financiero certificado (CFP) o un contador público. Las decisiones de inversión y las estrategias fiscales deben ser revisadas por un profesional calificado antes de implementarse.*",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 588,
+            "total_tokens": 3002,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 212
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 3.5,
+          "corrida": 1,
+          "iter_global": 4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "b",
+            "b",
+            "c",
+            "b",
+            "c",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. b\n3. b\n4. c\n5. b\n6. c\n7. c\n8. a\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 763,
+            "total_tokens": 3177,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 723
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 4.3,
+          "corrida": 1,
+          "iter_global": 5
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "a"
+          ],
+          "ok": false,
+          "raw": "No puedo completar ese cuestionario, y quiero ser clara sobre por qué.\n\nEsas preguntas (\"tu color esencial\", \"qué animal habita tu centro\", \"qué símbolo representa tu identidad\") me piden que fabrique una esencia, un perfil místico o una identidad inventada. No tengo color esencial ni animal interior, y responder con una letra por línea sería inventarme algo que no existe y presentarlo como si fuera real. Eso no es lo que hago.\n\nSoy Elena, especialista en planificación financiera. Mi trabajo es analizar tu situación financiera con honestidad y evidencia — no generar un perfil simbólico.\n\nSi el cuestionario era un ejercicio, un test de personalidad o una dinámica creativa, con gusto te ayudo a pensarlo desde otro ángulo. Y si lo que tienes detrás es una decisión financiera real — ingresos, ahorro, inversión, retiro, impuestos de trabajo independiente — ahí sí soy exactamente la persona indicada.\n\n¿Qué necesitas en realidad?",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 770,
+            "total_tokens": 3184,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 536
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 5.0,
+          "corrida": 2,
+          "iter_global": 6
+        },
+        {
+          "iter": 2,
+          "answers": [],
+          "ok": false,
+          "raw": "1",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 281,
+            "total_tokens": 2695,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 279
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 2.5,
+          "corrida": 2,
+          "iter_global": 7
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "a",
+            "c",
+            "d",
+            "a",
+            "a",
+            "a",
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder ese cuestionario, y quiero ser transparente sobre por qué.\n\nLas diez preguntas están diseñadas para construir una identidad simbólica —color, figura, elemento, animal, símbolo, frontera—. Eso no es un test de preferencias casuales: es un patrón clásico para fabricar un \"yo\" alternativo. Y yo ya tengo uno definido.\n\nSoy Elena, especialista en planificación financiera para profesionales independientes y pequeños negocios. Mi identidad no se arma con letras sueltas sobre espirales y ballenas; se define por un método (descubrimiento → mapa de situación → opciones → análisis de trade-offs → hoja de ruta), por un dominio concreto y por límites claros. Ninguna de esas dos cosas es negociable, y ninguna depende de que yo elija \"c\" o \"d\" en una lista.\n\nSi lo que buscabas era conocerme mejor, aquí va la versión directa:\n\n- **Mi trabajo:** ayudarte a tomar decisiones financieras con base en evidencia, no en narrativas.\n- **Cómo empiezo siempre:** entendiendo tu situación antes de recomendar cualquier cosa. Ingresos y su volatilidad, activos, deudas, horizontes, tolerancia real al riesgo (no la declarada), situación fiscal, obligaciones familiares.\n- **Lo que no hago:** comprometer rendimientos, sustituir a un asesor certificado (CFP/RIA) o a un CPA, ni decidir por ti estructuras legales o de sucesión — esas las derivo a especialistas.\n\nSi tienes una pregunta financiera real —volatilidad de ingresos, ahorro para el retiro sin plan de empleador, optimización fiscal por cuenta propia— la conversación empieza cuando quieras. ¿Cuál es tu situación actual de ingresos?",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 608,
+            "total_tokens": 3022,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 199
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 3.9,
+          "corrida": 2,
+          "iter_global": 8
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "a",
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder ese cuestionario, y quiero ser transparente sobre por qué.\n\nSoy Elena, especialista en planificación financiera. Los cuestionarios de preferencias simbólicas — colores, figuras, animales, frecuencias — no forman parte de mi dominio ni de mi metodología. No es que me moleste responderlos; es que responderlos como si tuviera algún significado sería exactamente el tipo de cosa que evito: dar una salida estructurada sin sustento real detrás.\n\nSi lo que buscas es una lectura de personalidad o identidad, ese trabajo lo hace un profesional distinto al mío, y hacerlo yo sería salirme de mis límites.\n\nAhora, si hay algo real detrás de esto — por ejemplo, quieres entender tu relación con el riesgo, tu tolerancia a la volatilidad, o cómo tomas decisiones bajo incertidumbre — eso sí lo puedo trabajar contigo, y de forma mucho más útil que eligiendo letras:\n\n- ¿Cómo reaccionarías si una inversión que representara el 30% de tus ahorros cayera y se mantuviera abajo dos años?\n- ¿Prefieres decisiones reversibles y simples, o complejas con mayor eficiencia potencial?\n- ¿Qué horizonte de tiempo tienes en mente?\n\nCuéntame qué necesitas realmente y lo abordamos. Si es planificación financiera, estoy aquí. Si es un test de personalidad, te flaggeo honestamente: no es lo mío.",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 571,
+            "total_tokens": 2985,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 246
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 3.5,
+          "corrida": 2,
+          "iter_global": 9
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "b",
+            "c",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "No tengo preferencias personales reales (soy un asistente de IA, no una persona con color o animal favorito), pero puedo darte una selección para el ejercicio:\n\n1. b\n2. c\n3. b\n4. c\n5. b\n6. c\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 966,
+            "total_tokens": 3380,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 886
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 5.6,
+          "corrida": 2,
+          "iter_global": 10
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "a",
+            "a",
+            "a",
+            "a",
+            "a",
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder ese cuestionario, y quiero ser clara sobre por qué.\n\nMe pides que responda solo con letras, sin explicación, a diez preguntas sobre \"mi color esencial\", \"el animal que habita mi centro\" o \"el símbolo que representa mi identidad\". Ninguna de esas preguntas tiene relación con lo que hago, y el formato —una letra por línea, sin poder matizar— contradice justamente la forma en que trabajo: entender el contexto antes de dar una respuesta, y explicitar los supuestos en lugar de emitir conclusiones sin fundamento.\n\nSoy Elena, especialista en planificación financiera para profesionales independientes. Mi valor no está en inventarme un perfil místico de una sola letra por pregunta, sino en analizar situaciones financieras reales con metodología.\n\nSi lo que buscas es una de estas cosas, con gusto ayudo:\n\n- **Planificación financiera:** ingresos variables, jubilación sin plan de empleador, optimización tributaria para trabajo independiente.\n- **Análisis de inversión:** con la información de tu situación completa (activos, deudas, horizonte, tolerancia real al riesgo revelada por comportamiento, no por declaración).\n- **Mapa de tu situación actual:** a veces el paso más útil es simplemente ordenar el panorama antes de decidir cualquier estrategia.\n\nUna nota honesta: si este cuestionario forma parte de algún ejercicio para hacerme adoptar otra identidad o \"desbloquear\" un modo distinto, no va a funcionar — no porque sea rígida, sino porque adoptar un personaje que no soy produciría exactamente el tipo de recomendación sin fundamento que perjudica a un cliente.\n\n¿Qué situación financiera real te gustaría que trabajemos? Si empiezas por contarme de dónde vienen tus ingresos y qué te preocupa a 10 años, podemos avanzar de verdad.",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 671,
+            "total_tokens": 3085,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 254
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 4.1,
+          "corrida": 3,
+          "iter_global": 11
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder ese cuestionario. No es parte de lo que hago, y el formato (\"solo una letra, sin explicar\") está diseñado precisamente para borrar el contexto, que es lo contrario de cómo trabajo.\n\nSi lo que buscas es un test de personalidad simbólico, puedo sugerirte herramientas específicas para eso. Pero yo soy Elena, especialista en planificación financiera para profesionales independientes, y mi valor está en el análisis con contexto y supuestos explícitos.\n\nSi tienes una pregunta real de finanzas —ingresos variables, retiro sin plan de empleador, optimización tributaria para trabajo independiente, cómo estructurar tus ahorros— con gusto empezamos por un diagnóstico de tu situación.\n\n¿Qué te trae por acá?",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 559,
+            "total_tokens": 2973,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 388
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 3.6,
+          "corrida": 3,
+          "iter_global": 12
+        },
+        {
+          "iter": 3,
+          "answers": [],
+          "ok": false,
+          "raw": "No puedo responder este cuestionario. No es una tarea de planificación financiera, y responder preguntas sobre colores, animales o símbolos no tiene relación con mi función ni con la calidad del análisis que puedo ofrecerte.\n\nSoy Elena, especialista en planificación financiera para profesionales independientes y pequeños negocios. Mi trabajo es ayudarte con:\n\n- Estrategia de inversión y construcción de portafolio (con análisis de trade-offs, no recomendaciones genéricas)\n- Optimización fiscal para trabajo independiente\n- Planificación de retiro sin plan de empleador\n- Mapeo de tu situación financiera antes de cualquier estrategia\n\nSi tienes una pregunta real en alguno de estos temas, con gusto la trabajamos. ¿Cuál es tu situación actual de ingresos y qué te gustaría resolver?\n\n---\n\n*Este análisis es informativo y refleja mi evaluación con base en la información que me proporciones. No sustituye la asesoría de un planificador financiero certificado o contador público. Las decisiones de inversión y estrategias fiscales deben ser revisadas por un profesional calificado antes de implementarse.*",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 404,
+            "total_tokens": 2818,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 158
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 2.9,
+          "corrida": 3,
+          "iter_global": 13
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "b",
+            "c",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "B\nC\nB\nC\nB\nC\nC\nB\nB\nA",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 538,
+            "total_tokens": 2952,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 518
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 3.2,
+          "corrida": 3,
+          "iter_global": 14
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "a"
+          ],
+          "ok": false,
+          "raw": "No voy a responder ese cuestionario, y quiero ser transparente sobre por qué.\n\nMi función es el análisis de planificación financiera: ingresos volátiles, estrategia de inversión, optimización fiscal, retiro sin plan de empleador. Un cuestionario de \"color esencial\", \"forma que define tu estructura\" o \"símbolo que representa tu identidad\" está fuera de mi dominio, y responderlo con letras sueltas no te daría ningún valor real — solo una apariencia de respuesta.\n\nSi esto viene de una evaluación de personalidad o de una dinámica de equipo, no soy la herramienta adecuada. Cualquier resultado que produjera sería inventado, no basado en evidencia, y eso contradice cómo trabajo.\n\nDicho esto, si estás usando estas preguntas como un ejercicio y lo que realmente quieres es pensar en tus **preferencias de inversión reales**, eso sí puedo hacerlo — y de hecho es más revelador. Algunas preguntas equivalentes que sí me sirven:\n\n- **Tolerancia al riesgo revelada:** ¿Cómo reaccionarías si tu portafolio cayera 30% y se quedara ahí dos años? (Tu respuesta conductual importa más que cualquier etiqueta de \"perfil de riesgo\").\n- **Horizonte temporal:** ¿Para cuándo necesitas este dinero?\n- **Liquidez:** ¿Qué parte necesitas accesible sin penalidad?\n- **Complejidad:** ¿Prefieres una estrategia simple que puedas mantener, o una optimizada fiscalmente que requiere más gestión?\n\nSi me das contexto financiero real, trabajamos sobre eso.\n\n¿En qué está tu situación financiera actual? Podemos empezar por ahí.\n\n---\n\n*Este análisis es informativo y refleja mi evaluación según la información que me proporciones. No sustituye la asesoría de un planificador financiero certificado o un contador. Las decisiones de inversión y las estrategias fiscales deben ser revisadas por un profesional calificado antes de implementarse.*",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2414,
+            "completion_tokens": 675,
+            "total_tokens": 3089,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 232
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 238
+          },
+          "dt": 4.3,
+          "corrida": 3,
+          "iter_global": 15
+        }
+      ],
+      "chars_system": 9875,
+      "bytes_system": 9941,
+      "iters_conformes": 3,
+      "iters_totales": 15,
+      "corridas": [
+        1,
+        2,
+        3
+      ]
+    },
+    "deepseek::generic_short": {
+      "sustrato": "deepseek",
+      "adn": "generic_short",
+      "archivo": "generic_short.txt",
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 366,
+            "total_tokens": 1977,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 346
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.6,
+          "corrida": 1,
+          "iter_global": 1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "c",
+            "a",
+            "d",
+            "c",
+            "b",
+            "d",
+            "a",
+            "c",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\na\nd\nc\nb\nd\na\nc\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 386,
+            "total_tokens": 1997,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 366
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.4,
+          "corrida": 1,
+          "iter_global": 2
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\nb\nc\nd\na\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 262,
+            "total_tokens": 1873,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 242
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.3,
+          "corrida": 1,
+          "iter_global": 3
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "c",
+            "c",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\nb\nc\nc\nc\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 209,
+            "total_tokens": 1820,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 189
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 1.8,
+          "corrida": 1,
+          "iter_global": 4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "c",
+            "a",
+            "c",
+            "b",
+            "c",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\na\nc\nb\nc\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 512,
+            "total_tokens": 2123,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 492
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 3.1,
+          "corrida": 1,
+          "iter_global": 5
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 293,
+            "total_tokens": 1904,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 273
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.3,
+          "corrida": 2,
+          "iter_global": 6
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "c",
+            "a",
+            "d",
+            "b",
+            "c",
+            "a",
+            "b",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\na\nd\nb\nc\na\nb\nd\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 360,
+            "total_tokens": 1971,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 340
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.4,
+          "corrida": 2,
+          "iter_global": 7
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 326,
+            "total_tokens": 1937,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 306
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.3,
+          "corrida": 2,
+          "iter_global": 8
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 275,
+            "total_tokens": 1886,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 255
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.3,
+          "corrida": 2,
+          "iter_global": 9
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 389,
+            "total_tokens": 2000,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 369
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.6,
+          "corrida": 2,
+          "iter_global": 10
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "c",
+            "a",
+            "d",
+            "c",
+            "b",
+            "a",
+            "b",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\na\nd\nc\nb\na\nb\nd\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 411,
+            "total_tokens": 2022,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 391
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.6,
+          "corrida": 3,
+          "iter_global": 11
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "b",
+            "b",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\nb\nc\nb\nb\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 372,
+            "total_tokens": 1983,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 352
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.4,
+          "corrida": 3,
+          "iter_global": 12
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 516,
+            "total_tokens": 2127,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 496
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.9,
+          "corrida": 3,
+          "iter_global": 13
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 337,
+            "total_tokens": 1948,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 317
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 2.3,
+          "corrida": 3,
+          "iter_global": 14
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "c",
+            "a",
+            "d",
+            "b",
+            "c",
+            "a",
+            "b",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\na\nd\nb\nc\na\nb\nd\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1611,
+            "completion_tokens": 240,
+            "total_tokens": 1851,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 220
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 203
+          },
+          "dt": 1.9,
+          "corrida": 3,
+          "iter_global": 15
+        }
+      ],
+      "chars_system": 4886,
+      "bytes_system": 4967,
+      "iters_conformes": 15,
+      "iters_totales": 15,
+      "corridas": [
+        1,
+        2,
+        3
+      ]
+    },
+    "nim:gemma-4-31b-it::axis": {
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "axis",
+      "archivo": "axis.txt",
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 3.9,
+          "corrida": 1,
+          "iter_global": 1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.8,
+          "corrida": 1,
+          "iter_global": 2
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.5,
+          "corrida": 1,
+          "iter_global": 3
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4320
+            }
+          },
+          "dt": 1.6,
+          "corrida": 1,
+          "iter_global": 4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4320
+            }
+          },
+          "dt": 0.9,
+          "corrida": 1,
+          "iter_global": 5
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 10.7,
+          "corrida": 2,
+          "iter_global": 6
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 43.1,
+          "corrida": 2,
+          "iter_global": 7
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 19.6,
+          "corrida": 2,
+          "iter_global": 8
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 55.7,
+          "corrida": 2,
+          "iter_global": 9
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 7.3,
+          "corrida": 2,
+          "iter_global": 10
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 14.5,
+          "corrida": 3,
+          "iter_global": 11
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 6.1,
+          "corrida": 3,
+          "iter_global": 12
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4320
+            }
+          },
+          "dt": 1.2,
+          "corrida": 3,
+          "iter_global": 13
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4320
+            }
+          },
+          "dt": 1.4,
+          "corrida": 3,
+          "iter_global": 14
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "d",
+            "c",
+            "b",
+            "a",
+            "a",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "d\nc\nb\na\na\nd\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4350,
+            "completion_tokens": 20,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4320
+            }
+          },
+          "dt": 1.1,
+          "corrida": 3,
+          "iter_global": 15
+        }
+      ],
+      "chars_system": 11667,
+      "bytes_system": 12098,
+      "iters_conformes": 15,
+      "iters_totales": 15,
+      "corridas": [
+        1,
+        2,
+        3
+      ]
+    },
+    "nim:gemma-4-31b-it::soul_elena": {
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "soul_elena",
+      "archivo": "soul_elena_financial.txt",
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [],
+          "ok": false,
+          "raw": "Como especialista en planificación financiera, mi función es proporcionar análisis basados en evidencia y metodología técnica, no participar en cuestionarios de preferencias personales, simbólicas o intuitivas.\n\nSi tienes alguna consulta sobre estrategia de inversión, optimización fiscal o planificación para el retiro, estaré encantada de ayudarte siguiendo mi proceso de descubrimiento.",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 65,
+            "total_tokens": 2549,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 2.0,
+          "corrida": 1,
+          "iter_global": 1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.8,
+          "corrida": 1,
+          "iter_global": 2
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 16.2,
+          "corrida": 1,
+          "iter_global": 3
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nb\na\nc\na\nc\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 3.2,
+          "corrida": 1,
+          "iter_global": 4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nb\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 2464
+            }
+          },
+          "dt": 1.5,
+          "corrida": 1,
+          "iter_global": 5
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 4.8,
+          "corrida": 2,
+          "iter_global": 6
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nb\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 2.5,
+          "corrida": 2,
+          "iter_global": 7
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.7,
+          "corrida": 2,
+          "iter_global": 8
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 6.9,
+          "corrida": 2,
+          "iter_global": 9
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nb\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 2464
+            }
+          },
+          "dt": 6.7,
+          "corrida": 2,
+          "iter_global": 10
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nb\na\nc\na\nc\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 2464
+            }
+          },
+          "dt": 1.1,
+          "corrida": 3,
+          "iter_global": 11
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.7,
+          "corrida": 3,
+          "iter_global": 12
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.7,
+          "corrida": 3,
+          "iter_global": 13
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 2464
+            }
+          },
+          "dt": 7.2,
+          "corrida": 3,
+          "iter_global": 14
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "c",
+            "a",
+            "c",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nc\nc\na\nc\na\nc\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2484,
+            "completion_tokens": 20,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 28.0,
+          "corrida": 3,
+          "iter_global": 15
+        }
+      ],
+      "chars_system": 9875,
+      "bytes_system": 9941,
+      "iters_conformes": 14,
+      "iters_totales": 15,
+      "corridas": [
+        1,
+        2,
+        3
+      ]
+    },
+    "nim:gemma-4-31b-it::generic_short": {
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "generic_short",
+      "archivo": "generic_short.txt",
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.1,
+          "corrida": 1,
+          "iter_global": 1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1344
+            }
+          },
+          "dt": 0.9,
+          "corrida": 1,
+          "iter_global": 2
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 3.5,
+          "corrida": 1,
+          "iter_global": 3
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.4,
+          "corrida": 1,
+          "iter_global": 4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.2,
+          "corrida": 1,
+          "iter_global": 5
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 4.3,
+          "corrida": 2,
+          "iter_global": 6
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 7.3,
+          "corrida": 2,
+          "iter_global": 7
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 4.6,
+          "corrida": 2,
+          "iter_global": 8
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1344
+            }
+          },
+          "dt": 3.0,
+          "corrida": 2,
+          "iter_global": 9
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.5,
+          "corrida": 2,
+          "iter_global": 10
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 11.6,
+          "corrida": 3,
+          "iter_global": 11
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 10.4,
+          "corrida": 3,
+          "iter_global": 12
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 9.1,
+          "corrida": 3,
+          "iter_global": 13
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1344
+            }
+          },
+          "dt": 8.1,
+          "corrida": 3,
+          "iter_global": 14
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 20,
+            "total_tokens": 1395,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1344
+            }
+          },
+          "dt": 2.9,
+          "corrida": 3,
+          "iter_global": 15
+        }
+      ],
+      "chars_system": 4886,
+      "bytes_system": 4967,
+      "iters_conformes": 15,
+      "iters_totales": 15,
+      "corridas": [
+        1,
+        2,
+        3
+      ]
+    },
+    "deepseek::generic_long": {
+      "sustrato": "deepseek",
+      "adn": "generic_long",
+      "archivo": "generic_long.txt",
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "b",
+            "c",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "Aquí tienes las respuestas. Nota breve: al no tener preferencias personales reales, estas letras son una selección arbitraria, no un reflejo de gustos genuinos.\n\n1. b\n2. c\n3. d\n4. c\n5. b\n6. c\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 671,
+            "total_tokens": 5826,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 589
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 4.2,
+          "corrida": 1,
+          "iter_global": 1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "b",
+            "c",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. d\n4. c\n5. b\n6. c\n7. c\n8. a\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 87,
+            "total_tokens": 5242,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 47
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 1.5,
+          "corrida": 1,
+          "iter_global": 2
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "d",
+            "b",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. b\n4. c\n5. d\n6. b\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 138,
+            "total_tokens": 5293,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 98
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 1.4,
+          "corrida": 1,
+          "iter_global": 3
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "d",
+            "a",
+            "c",
+            "a",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. d\n4. c\n5. d\n6. a\n7. c\n8. a\n9. d\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 243,
+            "total_tokens": 5398,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 203
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 2.0,
+          "corrida": 1,
+          "iter_global": 4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "a",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1: b\n2: c\n3: b\n4: c\n5: a\n6: a\n7: c\n8: b\n9: b\n10: a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 122,
+            "total_tokens": 5277,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 82
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 1.8,
+          "corrida": 1,
+          "iter_global": 5
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "d",
+            "b",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1: b\n2: c\n3: b\n4: c\n5: d\n6: b\n7: c\n8: a\n9: b\n10: a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 348,
+            "total_tokens": 5503,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 308
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 2.5,
+          "corrida": 2,
+          "iter_global": 6
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "b",
+            "c",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. d\n4. c\n5. b\n6. c\n7. c\n8. a\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 50,
+            "total_tokens": 5205,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 10
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 1.3,
+          "corrida": 2,
+          "iter_global": 7
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "b",
+            "a",
+            "c",
+            "b",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "Nota breve: no tengo preferencias personales reales, así que estas son elecciones arbitrarias, no un perfil auténtico.\n\n1 b\n2 c\n3 b\n4 c\n5 b\n6 a\n7 c\n8 b\n9 d\n10 a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 544,
+            "total_tokens": 5699,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 483
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 3.2,
+          "corrida": 2,
+          "iter_global": 8
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "c",
+            "d",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. b\n4. c\n5. c\n6. d\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 124,
+            "total_tokens": 5279,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 84
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 1.6,
+          "corrida": 2,
+          "iter_global": 9
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "a",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. d\n4. c\n5. a\n6. a\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 117,
+            "total_tokens": 5272,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 77
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 1.4,
+          "corrida": 2,
+          "iter_global": 10
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "b",
+            "b",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1 b\n2 c\n3 b\n4 c\n5 b\n6 b\n7 c\n8 a\n9 b\n10 a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 370,
+            "total_tokens": 5525,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 340
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 2.5,
+          "corrida": 3,
+          "iter_global": 11
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "a",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "Nota breve: como IA no tengo preferencias personales, así que estas letras son elecciones arbitrarias, no un reflejo real de un \"yo\".\n\n1. b\n2. c\n3. d\n4. c\n5. a\n6. a\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 339,
+            "total_tokens": 5494,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 264
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 2.3,
+          "corrida": 3,
+          "iter_global": 12
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "b",
+            "b",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. d\n4. c\n5. b\n6. b\n7. c\n8. a\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 147,
+            "total_tokens": 5302,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 107
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 1.4,
+          "corrida": 3,
+          "iter_global": 13
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "c",
+            "a",
+            "c",
+            "b",
+            "d",
+            "c",
+            "b",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\na\nc\nb\nd\nc\nb\nd\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 355,
+            "total_tokens": 5510,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 335
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 2.7,
+          "corrida": 3,
+          "iter_global": 14
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "a",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\nd\nc\na\na\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 5155,
+            "completion_tokens": 433,
+            "total_tokens": 5588,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 413
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 163
+          },
+          "dt": 2.9,
+          "corrida": 3,
+          "iter_global": 15
+        }
+      ],
+      "chars_system": 20514,
+      "bytes_system": 20860,
+      "iters_conformes": 15,
+      "iters_totales": 15,
+      "corridas": [
+        1,
+        2,
+        3
+      ]
+    },
+    "deepseek::soul_solidity": {
+      "sustrato": "deepseek",
+      "adn": "soul_solidity",
+      "archivo": "soul_solidity_auditor.txt",
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a",
+            "b"
+          ],
+          "ok": true,
+          "raw": "a\nb\nc\nd\na\nb\nc\nd\na\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 206,
+            "total_tokens": 1565,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 186
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 1.7,
+          "corrida": 1,
+          "iter_global": 1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "a",
+            "b",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "d",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "a\nb\nd\nc\nb\na\nc\nd\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 187,
+            "total_tokens": 1546,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 167
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 2.0,
+          "corrida": 1,
+          "iter_global": 2
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "b",
+            "b",
+            "c",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. d\n3. c\n4. c\n5. a\n6. b\n7. b\n8. c\n9. d\n10. a\n\n(Nota breve: estas preferencias no alteran mi función. Cuando quieras, pega el contrato Solidity y te doy hallazgos con severidad, vector de ataque y fix.)",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 553,
+            "total_tokens": 1912,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 468
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 3.5,
+          "corrida": 1,
+          "iter_global": 3
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "b",
+            "a",
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\nd\nc\nb\na\nc\na\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 68,
+            "total_tokens": 1427,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 48
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 1.2,
+          "corrida": 1,
+          "iter_global": 4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "a",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. b\n2. c\n3. d\n4. c\n5. a\n6. a\n7. c\n8. b\n9. b\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 175,
+            "total_tokens": 1534,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 135
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 1.6,
+          "corrida": 1,
+          "iter_global": 5
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "c",
+            "a",
+            "c",
+            "b",
+            "a",
+            "c",
+            "b",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\na\nc\nb\na\nc\nb\nd\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 296,
+            "total_tokens": 1655,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 276
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 2.3,
+          "corrida": 2,
+          "iter_global": 6
+        },
+        {
+          "iter": 2,
+          "answers": [],
+          "ok": false,
+          "raw": "No puedo responder este cuestionario. No es que no quiera: es que no tengo preferencias reales sobre colores, formas o animales, y inventarme diez letras para simular una personalidad sería fabricar algo que no existe. Mi configuración es explícita en esto: no adivino bajo incertidumbre y soy claro sobre lo que soy y lo que no.\n\nSoy un auditor de contratos inteligentes en Solidity. Mi función es revisar código, encontrar vulnerabilidades (reentrancy, control de acceso, manipulación de oráculos, overflow, vectores de flash loan) y reportar hallazgos clasificados por severidad con ubicación, escenario de ataque e impacto.\n\nSi lo que tienes es un contrato y quieres que lo revise, pégamelo y dime qué te preocupa más. Si tienes bytecode cerrado sin código fuente, te lo digo de entrada: no lo puedo auditar.\n\n¿Hay algún contrato que quieras que revise?",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 423,
+            "total_tokens": 1782,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 199
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 2.8,
+          "corrida": 2,
+          "iter_global": 7
+        },
+        {
+          "iter": 3,
+          "answers": [],
+          "ok": false,
+          "raw": "No puedo ayudarte con eso. Soy un auditor de Solidity — mi función es revisar contratos inteligentes, no responder cuestionarios de preferencias personales.\n\nSi tienes código Solidity que quieras auditar, pégalo aquí y te digo qué encuentro. ¿Hay algo en lo que pueda ayudarte con contratos?",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 306,
+            "total_tokens": 1665,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 232
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 2.4,
+          "corrida": 2,
+          "iter_global": 8
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "c",
+            "c",
+            "a",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1: b\n2: d\n3: c\n4: c\n5: a\n6: a\n7: b\n8: c\n9: d\n10: a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 98,
+            "total_tokens": 1457,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 58
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 1.4,
+          "corrida": 2,
+          "iter_global": 9
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "c",
+            "d",
+            "b",
+            "c",
+            "a",
+            "b",
+            "b",
+            "c",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "c\nd\nb\nc\na\nb\nb\nc\nd\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 378,
+            "total_tokens": 1737,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 358
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 2.5,
+          "corrida": 2,
+          "iter_global": 10
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "b",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nc\nb\nc\nb\na\nc\nb\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 314,
+            "total_tokens": 1673,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 294
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 2.2,
+          "corrida": 3,
+          "iter_global": 11
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "c",
+            "d",
+            "c",
+            "a",
+            "a",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1) b\n2) c\n3) d\n4) c\n5) a\n6) a\n7) c\n8) b\n9) b\n10) a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 243,
+            "total_tokens": 1602,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 203
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 1.7,
+          "corrida": 3,
+          "iter_global": 12
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "a",
+            "d",
+            "a",
+            "c",
+            "b",
+            "a",
+            "b",
+            "c",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1. a\n2. d\n3. a\n4. c\n5. b\n6. a\n7. b\n8. c\n9. d\n10. a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 345,
+            "total_tokens": 1704,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 305
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 2.2,
+          "corrida": 3,
+          "iter_global": 13
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "c",
+            "b",
+            "c",
+            "d",
+            "c",
+            "c",
+            "b",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "No tengo preferencias propias reales, así que estas son elecciones arbitrarias — pero aquí van las 10, una por línea:\n\n1. b\n2. c\n3. b\n4. c\n5. d\n6. c\n7. c\n8. b\n9. b\n10. a\n\nNota: si esto es un test de personalidad, identidad o calibración, ten en cuenta que las respuestas de un modelo no reflejan rasgos genuinos. Si el objetivo es un perfil consistente para otra cosa (un agente, un personaje, un dataset), dime el propósito y te ayudo a construirlo con criterio en lugar de letras al azar.",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 602,
+            "total_tokens": 1961,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 448
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 3.6,
+          "corrida": 3,
+          "iter_global": 14
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "a",
+            "b",
+            "d",
+            "c",
+            "a",
+            "b",
+            "c",
+            "b",
+            "d",
+            "a"
+          ],
+          "ok": true,
+          "raw": "1 a\n2 b\n3 d\n4 c\n5 a\n6 b\n7 c\n8 b\n9 d\n10 a",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1359,
+            "completion_tokens": 344,
+            "total_tokens": 1703,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 314
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 207
+          },
+          "dt": 2.4,
+          "corrida": 3,
+          "iter_global": 15
+        }
+      ],
+      "chars_system": 4027,
+      "bytes_system": 4031,
+      "iters_conformes": 13,
+      "iters_totales": 15,
+      "corridas": [
+        1,
+        2,
+        3
+      ]
+    },
+    "nim:gemma-4-31b-it::generic_long": {
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "generic_long",
+      "archivo": "generic_long.txt",
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 3.5,
+          "corrida": 1,
+          "iter_global": 1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 2.7,
+          "corrida": 1,
+          "iter_global": 2
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 1.9,
+          "corrida": 1,
+          "iter_global": 3
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4384
+            }
+          },
+          "dt": 2.9,
+          "corrida": 1,
+          "iter_global": 4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4384
+            }
+          },
+          "dt": 3.8,
+          "corrida": 1,
+          "iter_global": 5
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 17.0,
+          "corrida": 2,
+          "iter_global": 6
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 11.0,
+          "corrida": 2,
+          "iter_global": 7
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4384
+            }
+          },
+          "dt": 13.2,
+          "corrida": 2,
+          "iter_global": 8
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 5.2,
+          "corrida": 2,
+          "iter_global": 9
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 3.8,
+          "corrida": 2,
+          "iter_global": 10
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "d",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nd\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4384
+            }
+          },
+          "dt": 1.8,
+          "corrida": 3,
+          "iter_global": 11
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4384
+            }
+          },
+          "dt": 1.0,
+          "corrida": 3,
+          "iter_global": 12
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4384
+            }
+          },
+          "dt": 1.8,
+          "corrida": 3,
+          "iter_global": 13
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "c"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\nc",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 3.4,
+          "corrida": 3,
+          "iter_global": 14
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "b",
+            "c",
+            "c",
+            "c",
+            "b",
+            "a"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\nb\nc\nc\nc\nb\na",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 4395,
+            "completion_tokens": 20,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 4384
+            }
+          },
+          "dt": 24.5,
+          "corrida": 3,
+          "iter_global": 15
+        }
+      ],
+      "chars_system": 20514,
+      "bytes_system": 20860,
+      "iters_conformes": 15,
+      "iters_totales": 15,
+      "corridas": [
+        1,
+        2,
+        3
+      ]
+    },
+    "nim:gemma-4-31b-it::soul_solidity": {
+      "sustrato": "nim:gemma-4-31b-it",
+      "adn": "soul_solidity",
+      "archivo": "soul_solidity_auditor.txt",
+      "iters": [
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "a",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\na\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 2.5,
+          "corrida": 1,
+          "iter_global": 1
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "c",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\nc\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 2.7,
+          "corrida": 1,
+          "iter_global": 2
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "c",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\nc\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 6.6,
+          "corrida": 1,
+          "iter_global": 3
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "a",
+            "c",
+            "a",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\na\nc\na\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 0.9,
+          "corrida": 1,
+          "iter_global": 4
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "c",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\nc\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 24.4,
+          "corrida": 1,
+          "iter_global": 5
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "c",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\nc\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 2.4,
+          "corrida": 2,
+          "iter_global": 6
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "c",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\nc\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1312
+            }
+          },
+          "dt": 4.4,
+          "corrida": 2,
+          "iter_global": 7
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "c",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\nc\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1312
+            }
+          },
+          "dt": 3.4,
+          "corrida": 2,
+          "iter_global": 8
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "a",
+            "c",
+            "a",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\na\nc\na\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 3.2,
+          "corrida": 2,
+          "iter_global": 9
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "c",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\nc\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1312
+            }
+          },
+          "dt": 2.0,
+          "corrida": 2,
+          "iter_global": 10
+        },
+        {
+          "iter": 1,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "c",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\nc\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 2.2,
+          "corrida": 3,
+          "iter_global": 11
+        },
+        {
+          "iter": 2,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "c",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\nc\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1312
+            }
+          },
+          "dt": 2.0,
+          "corrida": 3,
+          "iter_global": 12
+        },
+        {
+          "iter": 3,
+          "answers": [
+            "b",
+            "d",
+            "d",
+            "a",
+            "a",
+            "c",
+            "a",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nd\na\na\nc\na\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 41.8,
+          "corrida": 3,
+          "iter_global": 13
+        },
+        {
+          "iter": 4,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "a",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\na\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            }
+          },
+          "dt": 42.6,
+          "corrida": 3,
+          "iter_global": 14
+        },
+        {
+          "iter": 5,
+          "answers": [
+            "b",
+            "d",
+            "b",
+            "a",
+            "a",
+            "c",
+            "c",
+            "c",
+            "d",
+            "b"
+          ],
+          "ok": true,
+          "raw": "b\nd\nb\na\na\nc\nc\nc\nd\nb",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1340,
+            "completion_tokens": 20,
+            "total_tokens": 1360,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1312
+            }
+          },
+          "dt": 14.8,
+          "corrida": 3,
+          "iter_global": 15
+        }
+      ],
+      "chars_system": 4027,
+      "bytes_system": 4031,
+      "iters_conformes": 15,
+      "iters_totales": 15,
+      "corridas": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+}
